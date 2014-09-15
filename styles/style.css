@@ -66,16 +66,16 @@ body{
 	z-index:10;
 	display:block;
 	min-height:525px;
-	box-shadow: -2px 0px 5px 5px rgba(0, 0, 0, 0.3);
+	/*box-shadow: -2px 0px 5px 5px rgba(0, 0, 0, 0.3);*/
 }
 
 .page-content-wrapper{
-	display:block;
-	background-color:#008aca;
-	padding:20px;
+	/* display:block; */
+	background-color: #008aca;
+	/* padding:20px; */
 	margin-top:0px;
 	margin-bottom:0px;
-	padding-bottom:15px;
+	/* padding-bottom:15px; */
 }
 
 .page-sidebar{
