@@ -9,10 +9,26 @@ body{
 	background-color:#282c33;
 }
 
-.page-header{
+a {
+	color: white;
+}
+
+.headerHolder{
 	height:60px;
 	box-shadow: 0px 3px 2px 2px rgba(0, 0, 0, 0.2);
 	background-color: white;
+}
+
+.page-header{
+	width: 20%;
+	float: left;
+	height:60px;
+}
+
+.back-header{
+	width: 20%;
+	float: left;
+	height:60px;
 }
 
 .paragraph{
@@ -22,23 +38,37 @@ body{
 
 
 .logo{
-	width:78px;
-	float:right;
-	margin-top:22px;
-	margin-right:20px;
+	width: 78px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 40%;
+	color: #008aca;
+	font-size: larger;
 }
 
 
 .deploy-sidebar{
-	position:absolute;
-	top:0px;
-	left:0px;
-	background-image:url(../images/misc/deploy-menu_402x.png);
-	background-size:18px 12px;
-	background-position:20px 23px;
-	background-repeat:no-repeat;
-	width:60px;
-	height:60px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url(../images/misc/deploy-menu_402.png);
+	background-size: 50px 18px;
+	background-position: 15px 20px;
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 60px;
+}
+
+.backbutton{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url(../images/misc/backbutton.png);
+	background-size: 50px 18px;
+	background-position: 15px 20px;
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 60px;
 }
 
 .deploy-sidebar:hover{
@@ -66,16 +96,59 @@ body{
 	z-index:10;
 	display:block;
 	min-height:525px;
-	/*box-shadow: -2px 0px 5px 5px rgba(0, 0, 0, 0.3);*/
 }
 
 .page-content-wrapper{
-	/* display:block; */
-	background-color: #008aca;
-	/* padding:20px; */
-	/*margin-top:0px;*/
-	/*margin-bottom:0px;*/
-	/* padding-bottom:15px; */
+	display:block;
+	background-color:#008aca;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:15px;
+	height: 100vh;
+}
+
+.LiveWrapper{
+	background-color:#008aca;
+	height: 100vh;
+}
+
+.page-content-events{
+	display:block;
+	background-color:#008aca;
+	padding:20px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:15px;
+	height: 100vh;
+}
+
+.page-content-rewards{
+	display:block;
+	background-color:#008aca;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:15px;
+	height:100vh;
+}
+
+.page-content-wrapper-index{
+	display:block;
+	background-color:#008aca;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:15px;
+	height:110vh;
+	background-image: url(../images/custom/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bottomBar{
+	background-image: url(../images/custom/bottomBar.png);
+	height: 10vh;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .page-sidebar{
@@ -232,26 +305,27 @@ padding-top:20px;
 {
 	float: left;
 	width: 49%;
-	height:100%;
+	height: 100%;
 	color: white;
 	font-size: x-large;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 .signinHolder
 {
 	float: left;
-	width: 49%;
-	height:100%;
+	width: 45%;
+	height: 100%;
 	color: white;
 	font-size: x-large;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 .borderHolder{
-	border: white;
-	border-style: solid;
 	float: left;
 	height: 100%;
+	font-size: xx-large;
+	color: white;
+	margin-top: 6.5%;
 }
 
 
@@ -288,7 +362,574 @@ padding-top:20px;
 	text-align:center;
 }
 
+.iconCustom{
+	height:20px;
+	color: #008aca;
+}
+.likeIcon{
+	margin-left: 36%;
+	float:left;
+}
+.shareIcon{
+	margin-left: 1%;
+	float: left;
+}
+.commentIcon{
+	float: left;
+	margin-left: 1%
+}
+
+.enterComp{
+	background-color: white;
+	height: 40vh;
+}
+
+.CompText{
+	width: 60%;
+	margin-left: 20%;
+	padding-top: 25px;
+	font-weight: bold;
+}
+
+div.fileinputs {
+	position: relative;
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.ProfileHolder{
+    height: 85vh;
+    background-color: white;
+}
+
+.ProfilePic{
+	float: left;
+	max-width: 100px;
+	max-height: 100px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.ProfileBasic{
+	float: left;
+	margin-left: 15px;
+	margin-top: 50px;
+}
+
+.ProfileOther{
+
+}
+
+.TopFix{
+	margin-top: 20px;
+}
+
+.backButton{
+	margin-top: 20px;
+}
+
+.infoGraphic{
+	
+}
+
+.infologo{
+	margin-left: 25%;
+	margin-top: 15%;
+}
+
+.infologo2{
+	margin-left: 20%;
+	margin-top: 15%;
+}
+
+.infologo3{
+	margin-left: 30%;
+	margin-top: 15%;
+}
+
+.infologo4{
+	margin-left: 35%;
+	margin-top: 15%;
+}
+
+.Text1{
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.Text2{
+	margin-left: 10%;
+	margin-top: 5%;
+	float: left;
+}
+
+.Text3{
+	margin-left: 10%;
+	margin-top: 5%;
+	float: left;
+}
+
+.TxtnArrow{
+	
+}
+
+.infoText1{
+	float: left;
+	margin-left: 13%;
+	margin-top: 5%;
+}
+
+.infoText2{
+	float: left;
+	margin-left: 10%;
+	margin-bottom: 8%;
+}
+
+.infoText3{
+	float: left;
+	margin-left: 10%;
+	margin-bottom: 28%;
+}
 
 
+.Arrow1{
+	margin-top: 6%;
+	float: left;
+}
 
+.Arrow2{
+	margin-top: 20%;
+	float: left;
+}
 
+.Arrow3{
+	margin-top: 20%;
+	float: left;
+}
+
+.flowIcons{
+	margin-top: 40%;
+	margin-left: 9%;
+}
+
+.locationBox{
+	margin-left: 15%;
+	margin-top: 10%;
+	background-image: url(../images/custom/location.png);
+	height: 225px;
+	width: 295px;
+	background-size: cover;
+}
+
+.doAllow
+{
+	float: left;
+	color: white;
+	margin-top: 65%;
+	width: 48%;
+}
+
+.borderAllow
+{
+	float: left;
+	color: white;
+	margin-top: 65%;
+}
+.dontAllow
+{
+	float: left;
+	color: white;
+	margin-top: 65%;
+	width: 48%;
+}
+
+.MosaicRow{
+	width: 100%;
+}
+
+.MosaicLeft{
+	width: 50%;
+	float: left;
+}
+
+.MosaicRight{
+	width: 50%;
+	float: left;
+}
+
+.LoginButtons{
+	margin-top: 20%;
+}
+
+.btn-email{
+	color: #fff;
+	background-color: #484848;
+	border-color: rgba(0,0,0,0.2);
+}
+
+.fa-email{
+	background-image: url(../images/custom/email.png);
+	background-size: contain;
+}
+
+.masonry {
+  margin: 0;
+  
+}
+
+.masonry .item {
+  width:  60px;
+  height: 60px;
+  float: left;
+}
+
+.item.w2 { width:  120px; }
+.item.w3 { width:  180px; }
+.item.w4 { width:  260px; }
+
+.item.h2 { height: 100px; }
+.item.h3 { height: 130px; }
+.item.h4 { height: 180px; }
+
+#fit-width .masonry {
+margin: 0px;
+}
+
+@media screen and (max-width: 480px){
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	#grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+}
+@media screen and (min-width: 769px) {
+	#grid[data-columns]::before {
+		content: '3 .column.size-1of3';
+	}
+}
+
+/* Again, you’re free to use and define the classes: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
+
+.mosaicflow__column { float:left; } 
+.mosaicflow__item img { display:block; width:100%; height:auto; }
+
+#textScroll{
+    height: 100vh;
+    width: 50%;
+    overflow: auto;
+    float: left;
+}
+
+#photosScroll{
+    height: 100vh;
+    width: 50%;
+    overflow: auto;
+    float: left;
+}
+
+.child{
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+.exploreOn{
+	background-image: url(../images/misc/explore_on.png);
+	float: left;
+	margin-top: 15px;
+	margin-left: 5%;
+	height: 30px;
+	width: 100px;
+}
+
+.rewardOff{
+	background-image: url(../images/misc/reward_off.png);
+	float: left;
+	margin-top: 15px;
+	height: 30px;
+	width: 100px;
+}
+
+.exploreOff{
+	background-image: url(../images/misc/explore_off.png);
+	float: left;
+	margin-top: 15px;
+	margin-left: 5%;
+	height: 30px;
+	width: 100px;
+}
+
+.rewardOn{
+	background-image: url(../images/misc/reward_on.png);
+	float: left;
+	margin-top: 15px;
+	height: 30px;
+	width: 100px;
+}
+
+.page-links{
+	width:80%;
+	float: left;
+	height:60px;
+}
+
+.eventsHeader{
+	background-image: url(../images/misc/events.png);
+	width: 100px;
+	height: 30px;
+	margin-left: 20%;
+	margin-top: 4%;
+}
+
+.TopSelectEvents{
+	width: 100%;
+	height: 40px;
+	background-color: #008aca;
+}
+
+.Favourites{
+	width: 50%;
+	background-color: white;
+	height: 40px;
+	float: left;
+	color: #008aca;
+}
+
+.Nearby{
+	width: 50%;
+	height: 40px;
+	float: left;
+	border-color: white;
+	border-style: solid;
+	border-width: medium;
+	color: white;
+}
+
+.Favourites2{
+	width: 50%;
+	height: 40px;
+	float: left;
+	border-color: white;
+	border-style: solid;
+	border-width: medium;
+	color: white;
+}
+
+.Nearby2{
+	width: 50%;
+	background-color: white;
+	height: 40px;
+	float: left;
+	color: #008aca;
+}
+
+.swiper-container{
+	width:100%;
+	height: 200px;
+}
+
+/*
+.swiper-wrapper{
+	width: 100%;
+}
+*/
+
+.swiper-container-index{
+	width:100%;
+	height:90vh;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+  z-index: 10;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #fff;
+}
+
+.device .arrow-left {
+  background: url(../images/custom/arrows.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 10;
+}
+.device .arrow-right {
+  background: url(../images/custom/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 10;
+}
+
+.MoreEvents{
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+.leftEvent{
+	width: 45%;
+	float: left;
+	margin-right: 5%;
+}
+
+.rightEvent{
+	width: 45%;
+	float: left;
+}
+
+.EventImage{
+}
+
+.EventText{
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.overlayImage{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: black;
+	font-family: 'tahoma';
+	font-size: 15px;
+	color: white;
+	opacity: 0.6;
+	height: 35px;
+	filter: alpha(opacity=60);
+}
+
+.likeButton{
+	background-image: url(../images/custom/like.png);
+	float: left;
+	width: 20px;
+	margin-left: 60%;
+	margin-top: 7px;
+	color: black;
+	padding-left: 7px;
+	font-size: x-small;
+	height: 20px;
+}
+
+.sharebutton{
+	background-image: url(../images/custom/share.png);
+	float: left;
+	width: 20px;
+	margin-top: 7px;
+	margin-left: 5px;
+	color: black;
+	padding-left: 7px;
+	font-size: x-small;
+	height: 20px;
+}
+
+.commentbutton{
+	background-image: url(../images/custom/comment.png);
+	float: left;
+	width: 20px;
+	margin-top: 7px;
+	margin-left: 5px;
+	color: black;
+	padding-left: 7px;
+	font-size: x-small;
+	height: 20px;
+}
+
+.signinBox{
+	width: 100%;
+	background-color: white;
+	height: 50vh;
+	margin-top: 15%;
+	padding-top: 20%;
+}
+
+.ShareBox{
+	height: 10%;
+	background-color: white;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+.CommentBox{
+	background-color: white;
+	height: 40%;
+	margin-top: 5px;
+	bottom: 0;
+}
+
+.ShareFB{
+	float: left;
+	margin-left: 20%;
+}
+
+.ShareTwitter{
+	float: left;
+	margin-left: 10%;
+}
+
+.ShareGoogle{
+	float: left;
+	margin-left: 10%;
+}
+
+.TextBoxComment{
+	margin-left: 5%;
+	padding-top: 5%;
+}
+
+.Comments{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.commentPhoto{
+	float:left;
+	width: 10%;
+}
+
+.commentText{
+	float:left;
+	width: 80%;
+	margin-left: 10px;
+}

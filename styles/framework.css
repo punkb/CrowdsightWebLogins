@@ -1412,7 +1412,6 @@ table tr:hover td{
 
 /*Portfolio One Item*/
 .portfolio-item-full-width h4{
-	margin-bottom:10px;
 }
 
 .portfolio-item-full-width a img{
@@ -1427,7 +1426,6 @@ table tr:hover td{
 	text-align:center;
 	line-height:18px;
 	text-transform:uppercase;
-	margin-bottom:10px;
 	font-weight:600;
 }
 

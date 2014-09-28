@@ -416,7 +416,6 @@ body						{	color:#646464;		font-family: 'Dosis', sans-serif;	}
 input						{						font-family: 'Dosis', sans-serif;}
 textarea					{ 						font-family: 'Dosis', sans-serif;}
 li, ul						{	color:#646464;		}
-a							{	color:#F89F35;		}
 em							{	color:#646464;		}
 blockquote					{	color:#646464!important;}
 .filtrable-caption			{	color:#646464;}
@@ -817,7 +816,6 @@ blockquote					{	color:#646464!important;}
 	text-align:center;
 	line-height:18px;
 	text-transform:uppercase;
-	margin-bottom:10px;
 	font-weight:600;
 }
 
@@ -834,7 +832,6 @@ blockquote					{	color:#646464!important;}
 	text-align:center;
 	font-size:10px;
 	line-height:18px;
-	margin-bottom:10px;
 	text-transform:uppercase;
 }
 

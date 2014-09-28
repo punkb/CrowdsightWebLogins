@@ -1,0 +1,211 @@
+<!DOCTYPE html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png"> 
+<!-- iPhone 3, 3Gs -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" /> 
+<!-- iPhone 4 -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen_402x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<!-- iPhone 5 -->
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen_403x.png" />
+
+<!-- Page Title -->
+<title>Crowdsight</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" type="text/css">
+<link href="styles/bxslider.css"			rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"			rel="stylesheet" type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" type="text/css">
+<link href="styles/coach.css"				rel="stylesheet" type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+<link rel="stylesheet" href="styles/idangerous.swiper.css" type="text/css">
+
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery-1.11.0.js"	 type="text/javascript"></script>	
+<script src="scripts/snap.js"			 type="text/javascript"></script>
+<script src="scripts/hammer.js"			 type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"   type="text/javascript"></script>
+<script src="scripts/subscribe.js"		 type="text/javascript"></script>
+<script src="scripts/contact.js"		 type="text/javascript"></script>
+<script src="scripts/jquery.swipebox.js" type="text/javascript"></script>
+<script src="scripts/bxslider.js"		 type="text/javascript"></script>
+<script src="scripts/retina.js"			 type="text/javascript"></script>
+<script src="scripts/custom.js"			 type="text/javascript"></script>
+<script src="scripts/framework.js"		 type="text/javascript"></script>
+<script src="scripts/app.js"		 type="text/javascript"></script>
+<script src="scripts/facebook.js"		 type="text/javascript"></script>
+
+</head>
+<body onload="getSingle()">
+
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+<div class="page-coach">
+	<div class="portrait-coach">
+        <span  style="top:40px; left:28px;" class="coach-arrow arrow1">
+        	<h3 style="padding-top:35px; padding-left:100px; margin-bottom:-5px;">TOGGLE</h3>
+            <p style="padding-top:0px; padding-left:100px;">TOGGLES THE NAVIGATION!</p>
+        </span>
+                
+        <span  style="top:300px; left:20px;" class="coach-arrow arrow9">
+        	<h3 style="padding-top:0px; padding-left:110px;  margin-bottom:-5px;">SWIPE THE PAGE!</h3>
+            <p style="padding-top:0px; padding-left:110px;">DRAG THE CONTENT TO THE <br>RIGHT TO SEE THE NAVIGATION!</p>
+        </span>
+       
+        <span  style="top:400px; left:120px;" class="coach-arrow arrow16">
+        	<h3 style="margin-left:-50px; padding-top:15px;  margin-bottom:-5px;">TAP ANYWHERE TO CLOSE!</h3>
+            <p style="margin-left:-162px; padding-left:110px;">CLOSE THE COACH, TAP THE PAGE!</p>
+        </span>
+       
+    </div>    
+    <div class="landscape-coach">        
+        <span style="left:47%; top:15%;" class="coach-arrow arrow12">
+            <p style="text-align:center; padding-top:100px; margin-left:-160px;">
+            	This is some text for the story<br>
+                It will show on the users facebook!<br>
+				which is pretty cool, boring, but still I guess cool...<br>      
+            </p>
+        </span>
+    </div>
+</div>
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+            <div class="nav-item">
+                <a href="live.html" class="nav-icon">
+                	<img src="images/misc/1.png" alt="img" width="30">
+                	LIVE FEED
+                </a>
+            </div>
+            <div class="nav-item no-border">
+                <a href="rewards.html" class="nav-icon">
+                	<img src="images/misc/4.png" alt="img" width="30">
+                	REWARDS
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="events.html" class="nav-icon">
+                	<img src="images/misc/event.png" alt="img" width="30">
+                	EVENTS
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="" class="nav-icon">
+                	<img src="images/misc/profile.png" alt="img" width="30">
+                	PROFILE
+                </a>
+            </div>
+            <div class="nav-item nav-coach no-border">
+                <a href="" class="nav-icon">
+                	<img src="images/misc/2.png" alt="img" width="30">
+                	HOW IT WORKS
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="" class="nav-icon">
+                	<img src="images/misc/power.png" alt="img" width="30">
+                	LOG OUT
+                </a>
+            </div>
+        </div>
+    </div>
+    
+      
+    <div id="content" class="page-content">
+       
+        <div class="headerHolder">
+        <div class="back-header" id="BackId">
+                   
+        </div>
+        <div class="page-links">
+        </div>
+       </div>
+        <div class="LiveWrapper">  
+       <!--Text Columns-->
+       		<div id="singleItem">
+	      	
+       		</div>
+			<div class="ShareBox">
+				<div class="ShareFB">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.warrickhartman.com/crowdsight/app/single.html?id=2&t=HelloThere" target="_blank" title="Share on Facebook"><img src="images/custom/facebookshare.png" style="max-width: 50px;"></a>
+				</div>
+				<div class="ShareTwitter">
+					<img src="images/custom/twittershare.png"  style="max-width: 50px;">
+				</div>
+				<div class="ShareGoogle">
+					<img src="images/custom/googleshare.png" style="max-width: 50px;">
+				</div>
+		     </div>
+		     <div class="CommentBox">
+		     	<div class="TextBoxComment">
+		     		<textarea placeholder="Enter comment" style="width: 90%;height: 60px;box-shadow: black;border: black;border-width: thin;border-style: inset;"></textarea>
+		     		<input type="submit" name="submit" value="Submit" style="width: 90%;">
+		     	</div>
+		     	<div class="Comments">
+		     		<div class="commentPhoto"><img src="images/custom/testProfile.jpg" style="max-width:100%"></div>
+		     		<div class="commentText">This is a test comment</div>
+		     	</div>
+		     </div>
+		</div>
+</div>
+
+  <script src="scripts/watermark.jquery.js"></script>
+  <script>
+  var config = {
+				"path": "http://warrickhartman.com/crowdsight/app/images/custom/logo.png"			
+				};		
+			$(document).ready(function(){
+				console.log("watermark");
+				$(document).watermark(config);
+				});
+		
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

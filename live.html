@@ -1,0 +1,203 @@
+<!DOCTYPE html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png"> 
+<!-- iPhone 3, 3Gs -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" /> 
+<!-- iPhone 4 -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen_402x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<!-- iPhone 5 -->
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen_403x.png" />
+
+<!-- Page Title -->
+<title>CrowdSight</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" type="text/css">
+<link href="styles/bxslider.css"			rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"			rel="stylesheet" type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" type="text/css">
+<link href="styles/coach.css"				rel="stylesheet" type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		 type="text/javascript"></script>	
+<script src="scripts/snap.js"			 type="text/javascript"></script>
+<script src="scripts/hammer.js"			 type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"   type="text/javascript"></script>
+<script src="scripts/subscribe.js"		 type="text/javascript"></script>
+<script src="scripts/contact.js"		 type="text/javascript"></script>
+<script src="scripts/jquery.swipebox.js" type="text/javascript"></script>
+<script src="scripts/bxslider.js"		 type="text/javascript"></script>
+<script src="scripts/colorbox.js"		 type="text/javascript"></script>
+<script src="scripts/retina.js"			 type="text/javascript"></script>
+<script src="scripts/custom.js"			 type="text/javascript"></script>
+<script src="scripts/framework.js"		 type="text/javascript"></script>
+<script src="scripts/app.js"		 type="text/javascript"></script>
+
+</head>
+<body onload="getLiveFeed()">
+
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+<div class="page-coach">
+	<div class="portrait-coach">
+        <span  style="top:40px; left:28px;" class="coach-arrow arrow1">
+        	<h3 style="padding-top:35px; padding-left:100px; margin-bottom:-5px;">TOGGLE</h3>
+            <p style="padding-top:0px; padding-left:100px;">TOGGLES THE NAVIGATION!</p>
+        </span>
+                
+        <span  style="top:300px; left:20px;" class="coach-arrow arrow9">
+        	<h3 style="padding-top:0px; padding-left:110px;  margin-bottom:-5px;">SWIPE THE PAGE!</h3>
+            <p style="padding-top:0px; padding-left:110px;">DRAG THE CONTENT TO THE <br>RIGHT TO SEE THE NAVIGATION!</p>
+        </span>
+       
+        <span  style="top:400px; left:120px;" class="coach-arrow arrow16">
+        	<h3 style="margin-left:-50px; padding-top:15px;  margin-bottom:-5px;">TAP ANYWHERE TO CLOSE!</h3>
+            <p style="margin-left:-162px; padding-left:110px;">CLOSE THE COACH, TAP THE PAGE!</p>
+        </span>
+       
+    </div>    
+    <div class="landscape-coach">        
+        <span style="left:47%; top:15%;" class="coach-arrow arrow12">
+            <p style="text-align:center; padding-top:100px; margin-left:-160px;">
+            	This page has a lot of responsive features!<br>
+                That means they expand when the device is in landscape!<br>
+				Flip your device back in portrait mode to continue the tutorial!<br>      
+            </p>
+        </span>
+    </div>
+</div>
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+        	<div class="nav-item">
+                <a href="events.html" class="nav-icon">
+                	<img src="images/misc/event.png" alt="img" width="30">
+                	EVENTS
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="profile.html" class="nav-icon">
+                	<img src="images/misc/profile.png" alt="img" width="30">
+                	PROFILE
+                </a>
+            </div>
+            <div class="nav-item nav-coach no-border">
+                <a href="" class="nav-icon">
+                	<img src="images/misc/2.png" alt="img" style="max-width:100%;" width="30">
+                	HOW IT WORKS
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="" class="nav-icon">
+                	<img src="images/misc/power.png" alt="img" style="max-width:100%;" width="30">
+                	LOG OUT
+                </a>
+            </div>
+        </div>
+    </div>
+    
+      
+    <div id="content" class="page-content">
+       <div class="headerHolder">
+        <div class="page-header">
+        	
+            <a href="#" class="deploy-sidebar"></a>        
+        </div>
+        <div class="page-links">
+        	<a href="#">
+	            <div class="exploreOn">
+	            </div>
+        	</a>
+        	<a href="competitions.html">
+	            <div class="rewardOff">
+	            </div>
+        	</a>
+        </div>
+       </div>
+       <div class="LiveWrapper">
+		  	<div id="textScroll">
+			    <div id="text">
+			    	<div class="child">
+			    	<div id="livePopular"></div>
+			    	</div>
+			    </div>
+			</div>
+			<div id="photosScroll">
+			    <div id="photos">
+			    	<div class="child">
+			    	<div id="liveRecent"></div>
+			    	</div>
+			    </div>
+			</div>
+       </div>
+</div>
+<script>
+$(document).ready(function(){
+    $('#textScroll').scroll(function(){
+        var textDiff = $('#text').height() - $('#textScroll').height();
+        var textDiffRatio = (1 / textDiff) * $('#textScroll').scrollTop();
+        var photosDiff = $('#photos').height() - $('#photosScroll').height();
+        var photosScrollTop = textDiffRatio * photosDiff;
+        $('#photosScroll').scrollTop(photosScrollTop);
+    });/*
+
+    $('#photosScroll').scroll(function(){
+        var textDiff = $('#photos').height() - $('#photosScroll').height();
+        var textDiffRatio = (1 / textDiff) * $('#photosScroll').scrollTop();
+        var photosDiff = $('#text').height() - $('#textScroll').height();
+        var photosScrollTop = textDiffRatio * photosDiff;
+        $('#textScroll').scrollTop(photosScrollTop);
+    });
+*/
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
